@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-nodeport-service
+spec:
+  type: {{.Values.service.type2}}
+  selector:
+    component: {{.Values.name}}
+  ports:
+  - protocol: TCP
+    port: 70        # Por
+    targetPort: {{.Values.container.port}}  # Port on the pods
+                                                              

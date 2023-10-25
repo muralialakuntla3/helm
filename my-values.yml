@@ -1,0 +1,9 @@
+replicaCount: 1
+name: frontend
+container:
+  image: nginx
+  pullPolicy: IfNotPresent
+  port: 90
+
+service:
+  type: LoadBalancer
