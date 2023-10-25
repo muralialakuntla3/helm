@@ -1,2 +1,2 @@
 # helm
-helm charts
+helm charts for deploying nginx
